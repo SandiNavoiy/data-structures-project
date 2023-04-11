@@ -22,6 +22,10 @@ class Stack:
         self.data = []
         self.top = None
 
+    def __str__(self):
+        """Магический метод для строкового  представления объекта"""
+        return f'{self.data}'
+
     def push(self, data):
         """
         Метод для добавления элемента на вершину стека
